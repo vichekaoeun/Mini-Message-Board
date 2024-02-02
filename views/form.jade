@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    h1 Header 
+    form(method="POST", action="/new")
+        label(for="name") Author's Name:
+        input(type="text", id="name", name="name")
+
+        label(for="text") Text: 
+        input(type="text", id="text", name="text")
+
+        button(type="submit") Submit

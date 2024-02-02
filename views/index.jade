@@ -3,3 +3,7 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  each message in messages
+    each object in message
+      p= object
+  a(href="/new") Go Submit form
